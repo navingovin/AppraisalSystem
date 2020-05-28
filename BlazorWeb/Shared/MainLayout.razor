@@ -1,15 +1,38 @@
 ﻿@inherits LayoutComponentBase
-
-<div class="sidebar">
-    <NavMenu />
-</div>
+@*<div class="sidebar">
+        <NavMenu />
+    </div>*@
 
 <div class="main">
-    <div class="top-row px-4">
-        <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+    <div class="top-row">
+        <div class="menu-container">
+            <div class="menu-item">
+                <span class="fa fa-bookmark-o color-white" aria-hidden="true"></span>
+                <a class="color-white" href="https://docs.microsoft.com/aspnet/" target="_blank">Employee</a>
+                <span class="fa fa-caret-down color-white" aria-hidden="true"></span>
+            </div>
+            <div class="menu-item">
+                <span class="fa fa-bookmark-o color-white" aria-hidden="true"></span>
+                <a class="color-white" href="https://docs.microsoft.com/aspnet/" target="_blank">Modules</a>
+                <span class="fa fa-caret-down color-white" aria-hidden="true"></span>
+            </div>
+            <div class="menu-item">
+                <span class="fa fa-bookmark-o color-white" aria-hidden="true"></span>
+                <a class="color-white" href="https://docs.microsoft.com/aspnet/" target="_blank">Utilities</a>
+                <span class="fa fa-caret-down color-white" aria-hidden="true"></span>
+            </div>
+
+
+        </div>
+
+        <div class="menu-item" style="margin-left: 70%;">
+            <img src="/icons8-male-user-40.png" asp-append-version="true" style="border-radius: 20px;" />
+            <a class="color-white" href="https://docs.microsoft.com/aspnet/" target="_blank">epplatform</a>
+            <span class="fa fa-caret-down color-white" aria-hidden="true"></span>
+        </div>
     </div>
 
-    <div class="content px-4">
+    <div class="content">
         @Body
     </div>
 </div>
